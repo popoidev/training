@@ -7,6 +7,8 @@
 
     //jen
     // do something sa variable na ginawa ni boni 
+    echo "The variable that Boni created is " . $training;
+
 
     //chris
     // create a foreach loop 
@@ -16,3 +18,4 @@
 
     //paul
     // echo ung foreach values
+?>
