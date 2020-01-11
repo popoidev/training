@@ -15,11 +15,13 @@
 	$items = ["Alpha","Beta","Charle"];
 
 	foreach ($items as $item) {
-		
+		echo "Output: ". $item;
     }
     
     //paul
     // update ung foreach loop ni chris add an array with values
     
     //jm
-    // echo ung foreach values
+	// echo ung foreach values
+	
+
