@@ -1,7 +1,9 @@
 <?php
 
     //boni
-    // declare a variable assign value
+    // declare a variable assign value.
+
+    $training = 10;
 
     //jen
     // do something sa variable na ginawa ni boni 
