@@ -12,7 +12,7 @@
 
 	//chris
 	// create a foreach loop 
-	$items = [];
+	$items = ["Alpha","Beta","Charle"];
 
 	foreach ($items as $item) {
 		
