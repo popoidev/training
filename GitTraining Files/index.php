@@ -12,14 +12,14 @@
 
 	//chris
 	// create a foreach loop 
-	$items =;
+	$items = [];
 
 	foreach ($items as $item) {
 		
-	}
-	//jm
-	// update ung foreach loop ni chris add an array with values
-
-	//paul
-	// echo ung foreach values
-?>
+    }
+    
+    //paul
+    // update ung foreach loop ni chris add an array with values
+    
+    //jm
+    // echo ung foreach values
