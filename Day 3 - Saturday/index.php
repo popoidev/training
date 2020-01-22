@@ -9,7 +9,7 @@
     <?php  require_once('submit.php'); ?>
 
     <?php
-        echo htmlspecialchars("<p>//asdsad</p>");
+        echo htmlspecialchars("<p>asdsad</p>");
     ?>
 </head>
 <body>

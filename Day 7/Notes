@@ -1,0 +1,87 @@
+// CREATE Table 
+// CREATE TABLE mysqltraining.`students` ( id INT NOT NULL AUTO_INCREMENT ,  first_name VARCHAR(191) NOT NULL ,  last_name VARCHAR(191) NOT NULL ,  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ,  updated_at TIMESTAMP on update CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ,    PRIMARY KEY  (id)) ENGINE = MyISAM;
+
+// MYSQL FUNCTIONS
+
+//COUNT 
+SELECT *, COUNT(id) AS num_students FROM students
+
+UPPER
+SELECT *, UPPER(first_name) AS first_name FROM students
+
+LOWER
+SELECT *, LOWER(first_name) AS last_name FROM students
+
+INITCAP
+SELECT *, initcap(last_name) AS last_name FROM students
+
+HOUR
+SELECT *, HOUR(first_subject) AS hour FROM students
+
+WEEK
+SELECT *, WEEK(created_at) AS week FROM students
+// 0 - 6 = [Sun - Sat]
+
+RAND
+// SELECT *, RAND() AS rand FROM students
+
+SUM 
+// SELECT SUM(grade) AS grade FROM students
+// SELECT SUM(grade) AS grade FROM students WHERE id IN (1, 4)
+
+AVG
+SELECT AVG(grade) AS average FROM students
+
+DISTINCT
+SELECT DISTINCT(last_name) AS distinct_last_name FROM students
+
+MIN
+SELECT students.first_name, MIN(grade) AS lowest FROM students
+
+MAX 
+SELECT students.first_name, MAX(grade) AS highest FROM students
+
+NOW vs CURDATE
+SELECT *, NOW() AS today FROM students
+SELECT *, CURDATE() AS today FROM students
+
+
+// JOINS 
+
+INNER JOIN = JOIN 
+SELECT * FROM students JOIN subjects ON students.id = subjects.student_id
+SELECT * FROM students INNER JOIN subjects ON students.id = subjects.student_id
+
+LEFT JOIN VS RIGHT JOIN
+SELECT * FROM students LEFT JOIN subjects ON students.id = subjects.student_id
+SELECT students.first_name, subjects.name FROM students JOIN subjects ON students.id = subjects.student_id
+
+// OUTER JOIN 
+
+
+//MULTIPLE JOIN 
+
+SELECT * FROM students RIGHT 
+JOIN subjects 
+ON students.id = subjects.student_id
+JOIN teachers 
+ON students.id = teachers.student_id
+
+
+FINAL PROJECT 
+
+REQUIREMENTS
+- 3 tables 
+- Have foreign Key Constraints
+- UI - GOOD UI 
+- VALIDATION 
+- SANITIZATION
+- ONE PAGE to LIST all joined table 
+- VIEWING related data 
+- CRUD on all data 
+- MYSQL Functions 
+- PHP Functions 
+- PUSH SA GIT
+
+
+JANUARY 30 - DEADLINE
